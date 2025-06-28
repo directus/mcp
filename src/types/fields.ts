@@ -32,7 +32,7 @@ export const FieldMetaSchema = z.object({
 	readonly: optionalBoolean().describe('If the field is read-only.'),
 	hidden: optionalBoolean().describe('If the field should be hidden.'),
 	sort: nullableNumber().describe('Sort order.'),
-	width: z.enum(['half', 'half-left', 'half-right', 'full', 'fill']).nullable().optional().describe('Width of the field.'),
+	width: optionalString().describe("Width of the field. Can be 'half', 'half-left', 'half-right', 'full', or 'fill'."),
 	translations: nullableRecord().describe("Translations for the field's name."),
 	note: nullableString().describe('A note for the field.'),
 	required: optionalBoolean().describe('If the field is required.'),
@@ -67,7 +67,7 @@ export const FieldSchema = z.object({
 		readonly: optionalBoolean().describe('Whether the field is read-only.'),
 		hidden: optionalBoolean().describe('Whether the field is hidden.'),
 		sort: nullableNumber().describe('Sort order in the UI.'),
-		width: z.enum(['half', 'half-left', 'half-right', 'full', 'fill']).nullable().optional().describe('UI width.'),
+		width: optionalString().describe("UI width. Can be 'half', 'half-left', 'half-right', 'full', or 'fill'."),
 	}).nullable().describe('Field metadata from Directus.'),
 }).describe('Represents a Directus Field as typically returned by the API.');
 
