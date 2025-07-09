@@ -16,8 +16,10 @@ const configSchema = z
 			'The password of the user to login with.',
 		),
 		DISABLE_TOOLS: z
-			.array(z.string())
-			.default(['delete-item'])
+			.string()
+			.default('["delete-item"]')
+			.transform((val) => JSON.parse(val))
+			.pipe(z.array(z.string()))
 			.describe("Disable specific tools by name. Defaults to ['delete-item']"),
 		MCP_SYSTEM_PROMPT_ENABLED: z
 			.string()

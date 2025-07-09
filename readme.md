@@ -291,7 +291,7 @@ Sample Claude Desktop Config for local dev with full settings
 			"env": {
 				"DIRECTUS_URL": "https://your-directus-instance.com",
 				"DIRECTUS_TOKEN": "your_directus_token",
-				"DISABLE_TOOLS": ["delete-item", "update-field"],
+				"DISABLE_TOOLS": "[\"delete-item\", \"update-field\"]",
 				"MCP_SYSTEM_PROMPT_ENABLED": "true",
 				"MCP_SYSTEM_PROMPT": "You are an assistant specialized in managing content for our marketing website.",
 				"DIRECTUS_PROMPTS_COLLECTION_ENABLED": "true",
