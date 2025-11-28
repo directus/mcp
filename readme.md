@@ -40,7 +40,7 @@ You can use email and password or generate a static token to connect the MCP to 
 
 To get a static access token:
 
-1. Login to your Directus instnace
+1. Login to your Directus instance
 2. Go to the User Directory and choose your own user profile
 3. Scroll down to the Token field
 4. Generate token and copy it
