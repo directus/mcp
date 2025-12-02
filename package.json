@@ -30,7 +30,7 @@
 
 	"dependencies": {
 		"@directus/sdk": "19.1.0",
-		"@modelcontextprotocol/sdk": "1.10.2",
+		"@modelcontextprotocol/sdk": "1.24.0",
 		"dotenv": "16.5.0",
 		"isomorphic-dompurify": "^2.24.0",
 		"marked": "^15.0.11",
